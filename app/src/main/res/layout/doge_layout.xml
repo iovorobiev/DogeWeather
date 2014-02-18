@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suchRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/doge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doge"
+            />
+
+        <com.ideas.dogeweather.views.DogeTextView
+            android:id="@+id/suchInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="such info"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/doge"
+            />
+
+        <com.ideas.dogeweather.views.DogeTextView
+            android:id="@+id/muchTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="33C"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/suchInfo"
+            />
+
+        <com.ideas.dogeweather.views.DogeTextView
+            android:id="@+id/soCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="St Petersburg"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/muchTemperature"
+            />
+
+    </RelativeLayout>
+    <com.ideas.dogeweather.views.DogeTextView
+        android:id="@+id/soFirst"
+        style="@style/DogeThinkStyle"
+        android:text="@string/general_wow"
+        android:textSize="25sp"
+        android:textColor="#FF0000"
+        />
+
+    <com.ideas.dogeweather.views.DogeTextView
+        android:id="@+id/soSecond"
+        style="@style/DogeThinkStyle"
+        android:text="@string/general_such_weather"
+        android:textSize="30sp"
+        android:textColor="#00FF00"
+        />
+
+    <com.ideas.dogeweather.views.DogeTextView
+        android:id="@+id/soThird"
+        style="@style/DogeThinkStyle"
+        android:text="@string/general_very_android"
+        android:textSize="27sp"
+        android:textColor="#0000FF"
+        />
+
+</RelativeLayout>
